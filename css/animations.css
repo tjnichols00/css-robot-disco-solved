@@ -1,0 +1,175 @@
+.robot-eye-left {
+  position: relative;
+  left: 40px;
+  top: 100px;
+  width: 130px;
+  height: 130px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid yellow;
+  animation-name: robot-left-eye;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes robot-left-eye {
+  0% {
+    border-bottom-color: yellow;
+  }
+  50% {
+    border-bottom-color: deeppink;
+  }
+  100% {
+    border-bottom-color: yellow;
+  }
+}
+
+.robot-eye-right {
+  position: relative;
+  left: 375px;
+  width: 130px;
+  height: 130px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid green;
+  animation-name: robot-right-eye;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes robot-right-eye {
+  0% {
+    border-top-color: green;
+  }
+  50% {
+    border-top-color: dodgerblue;
+  }
+  100% {
+    border-top-color: green;
+  }
+}
+
+.robot-ear-left {
+  position: relative;
+  left: 72%;
+  bottom: 600px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url(https://picsum.photos/100/100?grayscale);
+  animation: left-ear-skew 5s ease-in-out 1s infinite normal running;
+}
+@keyframes left-ear-skew {
+  0% {
+    border-radius: 50%;
+  }
+  50% {
+    width: 350px;
+    height: 200px;
+    border-radius: 350px / 200px;
+  }
+  100% {
+    border-radius: 50%;
+  }
+}
+
+.robot-ear-right {
+  position: relative;
+  right: 170px;
+  bottom: 730px;
+  width: 150px;
+  height: 150px;
+  background-color: dodgerblue;
+  border: 10px solid red;
+  animation: right-ear-rotate 5s ease-in 1s infinite normal running;
+}
+@keyframes right-ear-rotate {
+  0% {
+    transform: rotate(0turn);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(0.5turn);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(1turn);
+    opacity: 0;
+  }
+}
+
+.robot-teeth {
+  position: relative;
+  left: 20%;
+  bottom: 12%;
+  border-top: 100px solid chartreuse;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 350px;
+  transition: border-color 3s ease-in-out 1s;
+}
+
+.robot-teeth:hover {
+  border-color: deeppink;
+}
+
+#mouth {
+  background-color: purple;
+  transition: backgorund-color 3s ease-in-out 1s;
+}
+
+#mouth:hover {
+  background-color: dodgerblue;
+}
+
+.robot-nose {
+  position: relative;
+  left: 270px;
+  top: -110px;
+  width: 120px;
+  height: 230px;
+  background: linear-gradient(#a160f5, #c363f7, #fd9a6f);
+  border: 3px pink;
+  border-radius: 50px / 100px;
+  animation: nose-color 5s ease-in-out 1s infinite normal running;
+}
+@keyframes nose-color {
+  0% {
+    background: linear-gradient(#a160f5, #c363f7, #fd9a6f);
+  }
+  25% {
+    background: conic-gradient(#c363f7, #a160f5, #fd9a6f);
+  }
+  50% {
+    background: conic-gradient(#fd9a6f, #a160f5, #c363f7);
+  }
+  75% {
+    background: conic-gradient(#c363f7, #fd9a6f, #a160f5);
+  }
+  100% {
+    background: linear-gradient(#a160f5, #c363f7, #fd9a6f);
+  }
+}
+
+.robot-hair-style {
+  position: relative;
+  bottom: 1200px;
+  left: 280px;
+  box-shadow: 0 0 0 1em red, 0 1em 0 1em red, -2.5em 1.5em 0 0.5em red,
+    2.5em 1.5em 0 0.5em red, -3em -3em 0 0 red, 3em -3em 0 0 red,
+    -2em -2em 0 0 red, 2em -2em 0 0 red, -3em -1em 0 0 red, -2em -1em 0 0 red,
+    2em -1em 0 0 red, 3em -1em 0 0 red, -4em 0 0 0 red, -3em 0 0 0 red,
+    3em 0 0 0 red, 4em 0 0 0 red, -5em 1em 0 0 red, -4em 1em 0 0 red,
+    4em 1em 0 0 red, 5em 1em 0 0 red, -5em 2em 0 0 red, 5em 2em 0 0 red,
+    -5em 3em 0 0 red, -3em 3em 0 0 red, 3em 3em 0 0 red, 5em 3em 0 0 red,
+    -2em 4em 0 0 red, -1em 4em 0 0 red, 1em 4em 0 0 red, 2em 4em 0 0 red;
+  background: red;
+  width: 1.5em;
+  height: 1.5em;
+  overflow: visible;
+  margin: 50px 0 70px 65px;
+  transform: scale(2);
+}
